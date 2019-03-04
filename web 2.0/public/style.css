@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+html,
+body {
+    font-size: 13px;
+    height: 100%;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+* {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+a {
+    color: #e2001a;
+}
+
+input[type="text"],
+textarea {
+    background: #fff;
+    color: #4b545f;
+    display: block;
+    margin-bottom: 30px;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #e2001a;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+.date {
+    color: #999;
+}

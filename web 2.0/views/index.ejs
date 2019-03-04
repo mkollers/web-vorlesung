@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Web 2.0 - DHBW</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Web 2.0</h1>
+    <p>Unter dem Begriff Web 2.0 wird keine grundlegend neue Art von Technologien oder Anwendungen verstanden, sondern
+        der Begriff beschreibt eine in sozio-technischer Hinsicht veränderte Nutzung des Internets, bei der dessen
+        Möglichkeiten konsequent genutzt und weiterentwickelt werden. Es stellt eine Evolutionsstufe hinsichtlich des
+        Angebotes und der Nutzung des World Wide Web dar, bei der nicht mehr die reine Verbreitung von Informationen
+        bzw. der Produktverkauf durch Websitebetreiber, sondern die Beteiligung der Nutzer am Web und die Generierung
+        weiteren Zusatznutzens im Vordergrund stehen.¹</p>
+    <h3>Beliebte Technologien für SSR (Server-Side-Rendering)</h3>
+    <ul>
+        <li>PHP</li>
+        <li>Node.JS</li>
+        <li>ASP.NET</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>...</li>
+    </ul>
+    <h2>Gästebuch</h2>
+    <% entries.forEach(function(entry) { %>
+    <p>
+        <b><%= entry.name %></b><br>
+        <%= entry.message %><br>
+        <span class="date"><%= new Date(entry.date).toLocaleDateString('en-US') %></span>
+    </p>
+    <% }) %>
+    <form action="/" method="POST">
+        <input name="name" type="text" placeholder="Dein Name" required>
+        <textarea rows="8" name="message" placeholder="Deine Nachricht" required></textarea>
+        <input type="submit" value="Abschicken">
+    </form>
+    <h2>Quellen:</h2>
+    <ol>
+        <li>
+            <a href="https://wirtschaftslexikon.gabler.de/definition/web-20-51842">https://wirtschaftslexikon.gabler.de/definition/web-20-51842</a>
+        </li>
+    </ol>
+</body>
+
+</html>
